@@ -1,0 +1,23 @@
+<div class="alert alert-danger alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>{{msg}}</strong>
+  </div>
+
+  <h2>List of all available foods</h2>
+
+<table class="table table-hover">
+    <tr><th>Profilepic</th><th>Name</th><th>Price</th><th>Category</th><th>Availability</th></tr>
+
+{{#each data}}
+<tr>   <td><img src='/upload/{{this.Imageid}}' height="50" width="50"/></td>
+       <td>{{this.Name}}</td>
+       <td>{{this.Price}}</td>
+       <td>{{this.Category}}</td>
+       <td>{{this.Food_Available}}</td>
+        <td><a href="show?id={{this._id}}" class="glyphicon glyphicon-edit">Update</a></td>
+        <td><a href="delete?id={{this._id}}" class="glyphicon glyphicon-trash">Delete</a></td>
+      
+</tr>
+{{/each}}
+</table>
+</div>

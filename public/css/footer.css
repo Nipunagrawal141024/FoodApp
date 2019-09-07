@@ -1,0 +1,41 @@
+#footer{
+	background-color: #000000;
+	color: white;
+	height: 40vh;
+	width:100%;
+	padding-top: 20px;
+}
+
+.fa{
+	color: white;
+	padding-left: 10px;
+}
+
+.footer-icon:hover{
+	color: yellow;
+}
+
+ul li{
+	list-style: none;
+}
+
+ul li a{
+	color: white;
+}
+
+ul li a:hover{
+	color: lightgreen;
+	text-decoration: none;
+}
+
+#h3:hover{
+	font-size: 32px;
+}
+
+.h4:hover{
+	font-size: 32px;
+}
+
+ul li{
+	padding: 3px;;
+}
